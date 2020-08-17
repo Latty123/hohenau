@@ -1,0 +1,123 @@
+.root {
+    width: 100%;
+    text-align: center;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: black;
+}
+
+.page {
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+
+
+.subHeader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    width: 95%;
+    display: none;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text {
+    position: absolute;
+    color: white;
+    z-index: 5;
+    top: 15%;
+    width: 100%;
+}
+
+.title {
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin: .5em auto 0;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 500px) {
+    .title {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .subtitle {
+        margin: 1em auto 0;
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .title {
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .subtitle {
+        margin: 1.2em auto 0;
+        font-size: 28px;
+    }
+
+    .subHeader {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        top: 5%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .title {
+        font-size: 62px;
+        font-weight: 700;
+    }
+
+    .subtitle {
+        margin: 1.4em auto 0;
+        font-size: 36px;
+    }
+
+    .page {
+        margin-top: -150px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .text {
+        top: 20%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .title {
+        font-size: 86px;
+        font-weight: 700;
+    }
+
+    .subtitle {
+        margin: 1.6em auto 0;
+        font-size: 48px;
+    }
+
+    .text {
+        top: 23%;
+    }
+}

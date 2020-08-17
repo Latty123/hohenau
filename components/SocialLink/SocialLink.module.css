@@ -1,0 +1,95 @@
+.root {
+    background: white;
+    margin-right: 5px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    transition: 150ms;
+}
+
+.root:hover {
+    opacity: 0.85;
+}
+
+.social {
+    display: block;
+    height: 16px;
+    width: 16px;
+    margin: 0 auto;
+    opacity: 1;
+    transition: 150ms;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 500px) {
+    .root {
+        margin-right: 10px;
+        height: 45px;
+        width: 45px;
+    }
+
+    .social {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+.facebook {
+    background: url('../../public/icons/facebook-bl.svg') no-repeat center center;
+}
+
+.facebook:hover {
+    background: url('../../public/icons/facebook-wt.svg') no-repeat center center;
+}
+
+.instagram {
+    background: url('../../public/icons/instagram-bl.svg') no-repeat center center;
+}
+
+.instagram:hover {
+    background: url('../../public/icons/instagram-wt.svg') no-repeat center center;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: white;
+    position: absolute;
+    color: black;
+    top: 65px;
+    right: 150px;
+    z-index: 990;
+    padding: 0 8px;
+}
+
+.listItem {
+    border-top: 1px solid black;
+    padding: 6px 0 4px;
+}
+
+.listItem:nth-child(1) {
+    border-top: none;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.icon {
+    width: 16px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+@media screen and (min-width: 800px) {
+    .dropdown {
+        top: 50px;
+        right: 12px;
+    }
+}
