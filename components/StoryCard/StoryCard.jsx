@@ -2,7 +2,7 @@ import React from 'react';
 import T from 'prop-types';
 
 import { Picture } from '../Picture/Picture';
-import { stories } from '../Stories/Stories.constants';
+import { stories } from '../../content/Content.constants';
 
 import css from './StoryCard.module.css';
 
@@ -26,7 +26,7 @@ export const StoryCard = (props) => {
             <div className={css.shadow}>
                 <div className={css.line} />
                 <div className={css.title}>{props.story.title}</div>
-                <div className={css.subtitle}>{article}</div>
+                {props.type !== 'answers' && <div className={css.subtitle}>{article}</div>}
             </div>
         </Picture>
     );

@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import T from 'prop-types';
 
 import { StoryCard } from '../StoryCard/StoryCard';
-import { stories } from './Stories.constants';
+import { stories } from '../../content/Content.constants';
 import { setSelectedStory } from '../../system/App.duck';
 
 import css from './Stories.module.css';

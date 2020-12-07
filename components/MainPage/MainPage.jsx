@@ -52,9 +52,9 @@ export const MainPage = (props) => {
                                 <div className={css.article}>{selectedStory.article}</div>
                                 <div className={css.carousel}>
                                     <Carousel offset={40} draggable={false} arrows>
-                                        <img className={css.carouselItem} src={'./images/flag.jpg'} alt={''} />
-                                        <img className={css.carouselItem} src={'./images/museum.jpg'} alt={''} />
-                                        <img className={css.carouselItem} src={'./images/museum.jpg'} alt={''} />
+                                        {selectedStory.carousel.length && selectedStory.carousel.map(item => {
+                                            return <img key={item} className={css.carouselItem} src={`./images/${item}`} alt={''} />
+                                        })}
                                     </Carousel>
                                 </div>
                             </div>
